@@ -2,10 +2,10 @@
 
 import pandas as pd
 import streamlit as st
-from tensorflow.python.keras import models
+from tensorflow.keras.models import load_model
 
 # Load the trained model
-model = models.load_model("nn_model.keras")
+model = load_model("nn_model.keras")
 
 # Page title
 st.title("🔮 AI Prediction App")
